@@ -21,7 +21,7 @@ jobs:
       - name: Setup Graphviz
         uses: ts-graphviz/setup-graphviz@v1
       - name: Render graph
-        run: "dot -Tpng refmap.dot > OUTPUT.png"
+        run: "dot -Tsvg refmap_clean.dot > OUTPUT.svg"
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2.2.4
         with:
